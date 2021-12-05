@@ -42,6 +42,22 @@ p {
   background-color: #212529;
 }
 
+.dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: 0.25s ease all;
+}
+
+.dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(5%);
+  transition: 0.25s ease all;
+}
+
 .navbar .navbar-nav .nav-link {
   color: #cbd3da;
   font-size: 1.1em;
