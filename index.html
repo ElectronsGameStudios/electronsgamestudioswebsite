@@ -21,7 +21,7 @@
 
 <body>
 
-  <iframe src="assets/nav.html" frameborder="0"></iframe>
+  <div id="nav-placeholder"></div>
 
   <!-- Where the contnet of the page starts -->
 
@@ -56,11 +56,10 @@
     crossorigin="anonymous"></script>
 
     <script>
-      $(function() {
-        $("#navbar-placeholder").load("assets/nav.html");
-        $("#footer-placeholder").load("assets/footer.html");
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
       });
-    </script>
+      </script>
     
   <script src="script.js"></script>
 </body>
