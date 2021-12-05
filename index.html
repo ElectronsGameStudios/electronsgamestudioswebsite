@@ -21,7 +21,42 @@
 
 <body>
 
-  <div id="nav-placeholder"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Electrons Game Studios</a>
+        <!--Toggle button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/about">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link pointer dropdown-line text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Members</a>
+              <ul class="dropdown-menu dropdown-center bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-light bg-dark" href="/members">Overview</a></li>
+                <li><hr class="dropdown-divider text-light"></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/devon">Devon</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/aiden">Aiden</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/max">Max</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/gianna">Gianna</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/kilian">Kilian</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/jacob/">Jacob</a></li>
+                <li><a class="dropdown-item text-light bg-dark" href="/members/ben/">Ben</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Jobs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
   <!-- Where the contnet of the page starts -->
 
@@ -43,7 +78,27 @@
 
   <!-- Where the footer starts -->
 
-  <iframe src="assets/footer.html" frameborder="0"></iframe>
+  <div class="container footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="35" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="text">&copy; 2021 Electrons Game Studios, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="link-light" href="https://twitter.com/ElectronsGame" target="_blank"><i
+              class="fa fa-twitter"></i></a></li>
+        <li class="ms-3"><a class="link-light" href="https://www.instagram.com/electronsgamestudios/" target="_blank"><i
+              class="fa fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="link-light" href="https://www.youtube.com/channel/UCjD73r9iMiAYmTjlG0_awyg"
+            target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+      </ul>
+    </footer>
+  </div>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
