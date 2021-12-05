@@ -86,6 +86,11 @@ p {
   width: 100%;
 }
 
+.navbar .navbar-nav .nav-link.special::after {
+  content: '';
+  width: 100%;
+}
+
 .pointer {
   cursor: pointer;
 }

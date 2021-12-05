@@ -107,12 +107,14 @@ $(window).on("load resize", function() {
         $this.addClass(showClass);
         $this.find($dropdownToggle).attr("aria-expanded", "true");
         $this.find($dropdownMenu).addClass(showClass);
+        $("#navbarDropdown").addClass('special');
       },
       function() {
         const $this = $(this);
         $this.removeClass(showClass);
         $this.find($dropdownToggle).attr("aria-expanded", "false");
         $this.find($dropdownMenu).removeClass(showClass);
+        $("#navbarDropdown").removeClass('special');
       }
     );
   } else {
